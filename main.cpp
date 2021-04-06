@@ -1,6 +1,8 @@
 #include <iostream>
+using namespace std;
+
+#include "Basic/BitOperation/BitOperation.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    cout << bitAt(5, 2) << endl;
 }
