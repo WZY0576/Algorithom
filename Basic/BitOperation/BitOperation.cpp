@@ -6,3 +6,19 @@
 int bitAt(int n, int k) {
     return (n >> k) & 1;
 }
+
+int lastOf(int n, int k) {
+    return n & ((1 << k) - 1);
+}
+
+int toggleAt(int n, int k) {
+    return n ^ (1 << k);
+}
+
+int setAt(int n, int k) {
+    return n | (1 << k);
+}
+
+int resetAt(int n, int k) {
+    return n & (~(1 << k));
+}
